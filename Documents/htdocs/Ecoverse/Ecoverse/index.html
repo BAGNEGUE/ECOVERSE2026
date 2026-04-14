@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVerse Dashboard</title>
+    <!-- Modern web fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Left Navigation Sidebar -->
+    <nav class="sidebar glass-panel">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+            <h2>EcoVerse</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li class="active">
+                <a href="#"><i class="fa-solid fa-house"></i> Accueil</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-chart-line"></i> Analytiques</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-users"></i> Communauté</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-gear"></i> Paramètres</a>
+            </li>
+        </ul>
+
+        <div class="user-profile">
+            <img src="https://ui-avatars.com/api/?name=Admin+Eco&background=10B981&color=fff" alt="User admin" class="avatar">
+            <div class="user-info">
+                <h4>Admin</h4>
+                <p>Niveau 42 - Expert</p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <header class="header">
+            <div class="header-text">
+                <h1>Bonjour, Admin 👋</h1>
+                <p>Bienvenue sur votre espace de pilotage écologique.</p>
+            </div>
+            <div class="header-search">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" placeholder="Rechercher dans l'écosystème...">
+            </div>
+        </header>
+
+        <section class="overview-section">
+            <div class="insight-banner glass-panel">
+                <div class="insight-content">
+                    <span class="tag">Mise à jour</span>
+                    <h2>L'écosystème grandit !</h2>
+                    <p>EcoVerse a permis de réduire l'empreinte carbone de la communauté de 12% ce mois-ci. Découvrez les performances des 4 applications principales.</p>
+                </div>
+                <div class="insight-illustration">
+                    <i class="fa-solid fa-earth-europe"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- The 4 App Blocks -->
+        <section class="apps-grid">
+            <!-- App 1: Energreen -->
+            <div class="app-card" style="--app-color: #f59e0b;">
+                <div class="app-icon-wrapper">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div class="app-card-content">
+                    <h3>Energreen</h3>
+                    <p>Optimisation et suivi de la consommation énergétique.</p>
+                    <div class="app-stats">
+                        <span class="stat-value">4.2k</span>
+                        <span class="stat-label">Utilsateurs actifs</span>
+                    </div>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+
+            <!-- App 2: EcoQuiz -->
+            <div class="app-card" style="--app-color: #3b82f6;">
+                <div class="app-icon-wrapper">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="app-card-content">
+                    <h3>EcoQuiz</h3>
+                    <p>Éducation ludique et sensibilisation écologique.</p>
+                    <div class="app-stats">
+                        <span class="stat-value">12.5k</span>
+                        <span class="stat-label">Quizz joués</span>
+                    </div>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+
+            <!-- App 3: GreenMap -->
+            <div class="app-card" style="--app-color: #10b981;">
+                <div class="app-icon-wrapper">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <div class="app-card-content">
+                    <h3>GreenMap</h3>
+                    <p>Géolocalisation des initiatives et lieux éco-responsables.</p>
+                    <div class="app-stats">
+                        <span class="stat-value">840</span>
+                        <span class="stat-label">Lieux référencés</span>
+                    </div>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+
+            <!-- App 4: CleanSpot -->
+            <div class="app-card" style="--app-color: #f43f5e;">
+                <div class="app-icon-wrapper">
+                    <i class="fa-solid fa-recycle"></i>
+                </div>
+                <div class="app-card-content">
+                    <h3>CleanSpot</h3>
+                    <p>Gestion participative et tri des déchets communautaire.</p>
+                    <div class="app-stats">
+                        <span class="stat-value">1.8t</span>
+                        <span class="stat-label">Déchets triés</span>
+                    </div>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Right Sidebar: Puure AI Chatbot -->
+    <aside class="chat-sidebar glass-panel">
+        <div class="chat-header">
+            <div class="puure-logo">
+                <i class="fa-solid fa-sparkles"></i>
+            </div>
+            <div class="chat-title">
+                <h3>Puure</h3>
+                <span class="status-indicator"></span>
+            </div>
+            <button class="icon-btn"><i class="fa-solid fa-ellipsis"></i></button>
+        </div>
+        
+        <div class="chat-messages">
+            <div class="message-group bot">
+                <img src="https://ui-avatars.com/api/?name=Puure&background=8B5CF6&color=fff" alt="Puure AI" class="chat-avatar">
+                <div class="message-bubble">
+                    Bonjour ! Je suis <strong>Puure</strong>, votre IA intégrée au CMS EcoVerse. Je suis là pour vous aider à analyser les données et proposer des recommandations écologiques. ✨
+                </div>
+            </div>
+            
+            <div class="message-group user">
+                <div class="message-bubble">
+                    Peux-tu me résumer l'impact de CleanSpot cette semaine ?
+                </div>
+            </div>
+
+            <div class="message-group bot">
+                <img src="https://ui-avatars.com/api/?name=Puure&background=8B5CF6&color=fff" alt="Puure AI" class="chat-avatar">
+                <div class="message-bubble">
+                    Bien sûr ! 🌍 Cette semaine, <strong>CleanSpot</strong> a permis d'identifier 45 nouveaux spots de déchets. La communauté est intervenue sur 32 d'entre eux, ce qui dépasse notre objectif de 15%. 
+                    <br><br>Voulez-vous générer un rapport complet pour la newsletter ?
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <div class="input-wrapper">
+                <input type="text" placeholder="Demander à Puure...">
+                <button class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+            <p class="chat-disclaimer">Puure peut générer des conseils basés sur l'IA.</p>
+        </div>
+    </aside>
+
+</body>
+</html>
