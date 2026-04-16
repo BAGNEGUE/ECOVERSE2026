@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVerse CMS - Dashboard</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar glass">
+            <div class="logo-container">
+                <img src="logo.png" alt="EcoVerse Logo" class="brand-logo" onerror="this.src=''; this.alt='EcoVerse'">
+                <h2>EcoVerse<span>.</span></h2>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <i class="ri-dashboard-line"></i> Dashboard
+                </a>
+            </nav>
+
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Navigation Banner -->
+            <nav class="top-nav-banner glass">
+                <div class="nav-left">
+                    <a href="#" class="nav-link active">Accueil</a>
+                    <div class="dropdown">
+
+
+                    </div>
+                </div>
+            </nav>
+            <header class="top-header">
+                <div>
+                    <h1>Vue d'ensemble de l'Écosystème</h1>
+                    <p class="subtitle">Bienvenue sur votre espace d'administration EcoVerse</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-icon"><i class="ri-notification-3-line"></i></button>
+
+                </div>
+            </header>
+
+            <section class="mission-banner glass">
+                <div class="mission-content">
+                    <h2>Un avenir plus vert commence ici</h2>
+                    <p>
+
+                    </p>
+                </div>
+            </section>
+
+            <!-- Apps Grid -->
+            <section class="apps-grid">
+
+                <!-- EnerGreen -->
+                <article id="energreen" class="app-card glass energetic-card">
+                    <div class="card-header">
+                        <div class="app-icon-wrapper energreen">
+                            <img src="energreen (2).png" alt="EnerGreen"
+                                onerror="this.outerHTML='<i class=\'ri-flashlight-line\'></i>'">
+                        </div>
+                    </div>
+                    <h3>EnerGreen</h3>
+                    <p>Suivi et réduction de la consommation énergétique. Optimisez vos ressources d'un simple clic.</p>
+                    <div class="card-footer">
+                        <span class="stat"><i class="ri-user-line"></i> 12k utilisateurs</span>
+                    </div>
+                </article>
+
+                <!-- EcoQuizz -->
+                <article id="ecoquizz" class="app-card glass quiz-card">
+                    <div class="card-header">
+                        <div class="app-icon-wrapper ecoquizz">
+                            <img src="EcoQuizz.png" alt="EcoQuizz"
+                                onerror="this.outerHTML='<i class=\'ri-brain-line\'></i>'">
+                        </div>
+                    </div>
+                    <h3>EcoQuizz</h3>
+                    <p>Éducation écologique par le jeu. Sensibilisez la communauté avec des défis ludiques.</p>
+                    <div class="card-footer">
+                        <span class="stat"><i class="ri-trophy-line"></i> 5k quiz complétés</span>
+                    </div>
+                </article>
+
+                <!-- GreenMap -->
+                <article id="greenmap" class="app-card glass map-card">
+                    <div class="card-header">
+                        <div class="app-icon-wrapper greenmap">
+                            <img src="greemap.png" alt="GreenMap"
+                                onerror="this.outerHTML='<i class=\'ri-map-pin-line\'></i>'">
+                        </div>
+                    </div>
+                    <h3>GreenMap</h3>
+                    <p>Cartographie interactive des points d'intérêts écologiques. Découvrez le réseau vert de votre
+                        ville.</p>
+                    <div class="card-footer">
+                        <span class="stat"><i class="ri-map-2-line"></i> 850 points</span>
+                    </div>
+                </article>
+
+                <!-- CleanSpot -->
+                <article id="cleanspot" class="app-card glass clean-card">
+                    <div class="card-header">
+                        <div class="app-icon-wrapper cleanspot">
+                            <img src="Cleanspot (2).png" alt="CleanSpot"
+                                onerror="this.outerHTML='<i class=\'ri-delete-bin-line\'></i>'">
+                        </div>
+                    </div>
+                    <h3>CleanSpot</h3>
+                    <p>Gestion intelligente et communautaire du tri des déchets. Transformez vos rebuts en ressources.
+                    </p>
+                    <div class="card-footer">
+                        <span class="stat"><i class="ri-recycle-line"></i> 3.2 tonnes triées</span>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- Puure Chatbot Widget -->
+    <div class="puure-widget" id="puureWidget">
+        <div class="puure-chat glass" id="puureChat">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <img src="puure-logo.png" alt="Puure Avatar" class="puure-avatar"
+                        onerror="this.outerHTML='<i class=\'ri-robot-line puure-avatar-fallback\'></i>'">
+                    <div>
+                        <h4>Puure</h4>
+                        <span class="chat-status">Votre assistant EcoVerse</span>
+                    </div>
+                </div>
+                <button class="btn-close" id="closeChat"><i class="ri-close-line"></i></button>
+            </div>
+
+            <div class="chat-body" id="chatBody">
+                <!-- Messages will be injected here by script.js -->
+            </div>
+
+            <div class="chat-footer">
+                <input type="text" placeholder="Demander à Puure..." class="chat-input border-blob">
+                <button class="btn-send"><i class="ri-send-plane-fill"></i></button>
+            </div>
+        </div>
+
+        <button class="puure-trigger glow-effect" id="toggleChat">
+            <img src="puure-logo.png" alt="Puure" onerror="this.outerHTML='<i class=\'ri-chat-smile-3-line\'></i>'">
+            <div class="notification-dot"></div>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
